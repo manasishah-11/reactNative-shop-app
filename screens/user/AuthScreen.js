@@ -1,16 +1,7 @@
 import React, { useState, useEffect, useReducer, useCallback } from 'react';
-import {
-  ScrollView,
-  View,
-  KeyboardAvoidingView,
-  StyleSheet,
-  Button,
-  ActivityIndicator,
-  Alert
-} from 'react-native';
+import {ScrollView, View, KeyboardAvoidingView, StyleSheet, Button, ActivityIndicator, Alert} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useDispatch } from 'react-redux';
-
 import Input from '../../components/UI/Input';
 import Card from '../../components/UI/Card';
 import Colors from '../../constants/Colors';
@@ -82,7 +73,6 @@ const AuthScreen = props => {
     setIsLoading(true);
     try {
       await dispatch(action);
-      // props.navigation.navigate('Shop');
     } catch (err) {
       setError(err.message);
       setIsLoading(false);

@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import {
-  View,
-  FlatList,
-  Text,
-  Platform,
-  ActivityIndicator,
-  StyleSheet
-} from 'react-native';
+import {View, FlatList, Text, Platform, ActivityIndicator, StyleSheet} from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
-
 import HeaderButton from '../../components/UI/HeaderButton';
 import OrderItem from '../../components/shop/OrderItem';
 import * as ordersActions from '../../store/actions/orders';

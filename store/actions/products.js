@@ -7,7 +7,6 @@ export const SET_PRODUCTS = 'SET_PRODUCTS';
 
 export const fetchProducts = () => {
   return async (dispatch, getState) => {
-    // any async code you want!
     const userId = getState().auth.userId;
     try {
       const response = await fetch(
@@ -40,7 +39,6 @@ export const fetchProducts = () => {
         userProducts: loadedProducts.filter(prod => prod.ownerId === userId)
       });
     } catch (err) {
-      // send to custom analytics server
       throw err;
     }
   };

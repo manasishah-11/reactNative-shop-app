@@ -18,7 +18,6 @@ export default (state = initialState, action) => {
       let updatedOrNewCartItem;
 
       if (state.items[addedProduct.id]) {
-        // already have the item in the cart
         updatedOrNewCartItem = new CartItem(
           state.items[addedProduct.id].quantity + 1,
           prodPrice,
@@ -38,7 +37,6 @@ export default (state = initialState, action) => {
       const currentQty = selectedCartItem.quantity;
       let updatedCartItems;
       if (currentQty > 1) {
-        // need to reduce it, not erase it
         const updatedCartItem = new CartItem(
           selectedCartItem.quantity - 1,
           selectedCartItem.productPrice,

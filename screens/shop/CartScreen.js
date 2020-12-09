@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  FlatList,
-  Button,
-  StyleSheet,
-  ActivityIndicator
-} from 'react-native';
+import {View, Text, FlatList, Button, StyleSheet, ActivityIndicator} from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
-
 import Colors from '../../constants/Colors';
 import CartItem from '../../components/shop/CartItem';
 import Card from '../../components/UI/Card';

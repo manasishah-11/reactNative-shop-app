@@ -1,16 +1,7 @@
 import React, { useState, useEffect, useCallback, useReducer } from 'react';
-import {
-  View,
-  ScrollView,
-  StyleSheet,
-  Platform,
-  Alert,
-  KeyboardAvoidingView,
-  ActivityIndicator
-} from 'react-native';
+import {View, ScrollView, StyleSheet, Platform, Alert, KeyboardAvoidingView, ActivityIndicator} from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import { useSelector, useDispatch } from 'react-redux';
-
 import HeaderButton from '../../components/UI/HeaderButton';
 import * as productsActions from '../../store/actions/products';
 import Input from '../../components/UI/Input';
